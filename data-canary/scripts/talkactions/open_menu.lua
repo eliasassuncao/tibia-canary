@@ -111,42 +111,6 @@ function createItemMenu(player)
     window:sendToPlayer(player)
 end
 
--- function createConfigMenu(player)
---     local window = ModalWindow {
---         title = "Configuracoes",
---         message = "Configuracoes do personagem:"
---     }
-    
---     window:addButton("Reset Skills.", function(player, button, choice)
---         for i = 0, 6 do
---             player:setSkillLevel(i, 10)
---         end
---         player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Skills resetados para level 10!")
---         player:getPosition():sendMagicEffect(CONST_ME_MAGIC_BLUE)
---     end)
-    
---     window:addButton("Full Bless", function(player, button, choice)
---         for i = 1, 8 do
---             player:addBlessing(i)
---         end
---         player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Todas as blessings recebidas!")
---         player:getPosition():sendMagicEffect(CONST_ME_HOLYAREA)
---     end)
-    
---     window:addButton("Reset HP/MP", function(player, button, choice)
---         player:addHealth(player:getMaxHealth())
---         player:addMana(player:getMaxMana())
---         player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "HP e MP restaurados!")
---         player:getPosition():sendMagicEffect(CONST_ME_MAGIC_GREEN)
---     end)
-    
---     window:addButton("Voltar", function(player, button, choice)
---         createMainMenu(player)
---     end)
-    
---     window:sendToPlayer(player)
--- end
-
 function createConfigMenu(player)
     local window = ModalWindow {
         title = "Configuracoes",
