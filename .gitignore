@@ -6,6 +6,11 @@ build-*/
 Build-*/
 BUILD-*/
 
+# Large world files
+data-canary/world/*.otbm
+data-otservbr-global/world/*.otbm
+*.otbm
+
 # Visual Studio folders
 .vs/
 .vscode/
